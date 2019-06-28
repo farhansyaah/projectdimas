@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="SCORE"
+            android:textColor="#0A0A0A"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/iniScore1"/>
+
+        <TextView
+            android:id="@+id/skor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtPertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="Ini Adalah pertanyaan "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="italic"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnTombol1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:background="#B42F2F"
+                android:text="Pilihan 1"
+                android:textColor="#F8F8F8"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnTombol2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:background="#B42F2F"
+                android:text="Pilihan 2"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnTombol3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:background="#B42F2F"
+                android:text="Pilihan 3"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnTombol4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:background="#B42F2F"
+                android:text="Pilihan 4"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
